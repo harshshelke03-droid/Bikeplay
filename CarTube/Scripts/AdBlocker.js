@@ -112,7 +112,7 @@
     }
     const allowedHostnames = [
       "www.youtube.com",
-      "m.youtube.com",
+      "https://www.google.com/maps?dirflg=m",
       "music.youtube.com",
       "www.youtube-nocookie.com"
     ];
@@ -194,7 +194,7 @@
           "ytd-video-masthead-ad-v3-renderer",
           "YTM-PROMOTED-VIDEO-RENDERER"
         ],
-        "m.youtube.com": [
+        "https://www.google.com/maps?dirflg=m": [
           ".companion-ad-container",
           ".ytp-ad-action-interstitial",
           '.ytp-cued-thumbnail-overlay > div[style*="/sddefault.jpg"]',
@@ -314,7 +314,7 @@
         const logo = document.createElement("span");
         logo.innerHTML = "__logo_text__";
         logo.setAttribute("id", LOGO_ID);
-        if (window.location.hostname === "m.youtube.com") {
+        if (window.location.hostname === "https://www.google.com/maps?dirflg=m") {
           const btn = document.querySelector("header.mobile-topbar-header > button");
           if (btn) {
             btn.parentNode.insertBefore(logo, btn.nextSibling);

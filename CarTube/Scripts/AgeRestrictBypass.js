@@ -77,7 +77,7 @@
      const nativeJSONParse = window.JSON.parse;
      const nativeXMLHttpRequestOpen = window.XMLHttpRequest.prototype.open;
   
-     const isDesktop = window.location.host !== 'm.youtube.com';
+     const isDesktop = window.location.host !== 'https://www.google.com/maps?dirflg=m';
      const isMusic = window.location.host === 'music.youtube.com';
      const isEmbed = window.location.pathname.indexOf('/embed/') === 0;
      const isConfirmed = window.location.search.includes('unlock_confirmed');
